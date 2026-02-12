@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Trigger Render Deploy
         run: |
-          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
+          curl -X POST ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
